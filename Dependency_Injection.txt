@@ -1,0 +1,44 @@
+- Dependency Injection là các đối tượng định nghĩa sự phụ thuộc của chúng thông qua tham số của phương thức khởi tạo (constructor) 
+hoặc các thuộc tính được thiết lập trên thể hiện (instance) sau khi nó được khởi tạo hoặc trả về từ phương thức factory.
+- Về cơ bản có 3 loại dependency injection:
+1.Constructor injection: các dependency đc cung cấp thông qua constructor của class.
+2.Setter injection: client tạo ra một setter method để các class khác có thể sử dụng chúng để cấp dependency.
+3.Interface injection: dependency sẽ cung cấp một hàm injector để inject nó vào bất kì client nào đc truyền vào. 
+Các client phải implement một interface mà có một setter method dành cho việc nhận dependency.
+- Lợi ích của dependency injection.
+1.Giúp viết Unit test dễ dàng hơn.
+2.Giảm thiểu đc boilerplate code vì việc khởi tạo dependency đc làm bởi một component khác.
+Mở dụng dự án dễ dàng hơn.
+3.Giúp ích trong việc liên kết lỏng (loose coupling) giữa các thành phần trong dự án.
+
+- Ví dụ:
+
+class Car{
+  private Wheels wheel;
+  private Battery battery;
+  
+  /*Ở đâu đó trong project, ta khởi tạo những objects mà đc yêu cầu bởi class này
+    Có 2 cách để implement dependency injection
+    1. Dựa vào constructor
+    2. Dựa vào Setter method
+  */
+  
+  // Dựa vào constructor
+  Car(Wheel wh, Battery bt) {
+    this.wh = wh;
+    this.bt = bt;
+  }
+  
+  // Dựa vào Setter method
+  void setWheel(Batter bt){
+    this.bt = bt;
+  }
+  ...  
+  ...
+}
+
+Vậy trách nhiệm của dependency injection là:
+
+1.Tạo ra các object.
+2.Biết được class nào cần những object đấy.
+3.Cung cấp cho những class đó những object chúng cần.
