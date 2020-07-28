@@ -1,0 +1,8 @@
+- Spring là một J2EE application framework được cung cấp để quản lý các đối tượng nghiệp vụ và sự phụ thuộc giữa chúng. 
+Ví dụ, với IoC (Inversion of Control), nó cho phép bạn xác định DAO (Data Access Object) phụ thuộc vào DataSource. 
+Nó cũng cho phép developer viết các giao tiếp và đơn giản định nghĩa cài đặt trong XML file. 
+Spring chứa nhiều lớp hỗ trợ các framework khác (như Hibernate và Struts) để tạo sự tích hợp dễ dàng hơn.
+- Áp dụng J2EE Design Pattern thì cồng kềnh và không cần thiết ở một số trường hợp. 
+Spring thì giống design pattern nhưng mọi thứ thì đơn giản hơn. 
+Ví dụ: thay vì viết ServerLocator để tìm Hibernate Session, bạn có thể cấu hình SessionFactory trong Spring. 
+Điều này giúp bạn tập trung vào kỹ thuật (best practices) nhiều hơn là hình dung vào mẫu gần nhất.

@@ -1,0 +1,16 @@
+Và một vài ưu điểm khi sử dụng Spring framework:
+1.Lightweight và very little overhead trong việc phát triển ứng dụng của bạn.
+2.Dependency Injection hoặc Inversion of Control được sử dụng để giúp các component tách rời, độc lập với nhau.
+ Spring container sẽ giúp gắn kết những components này lại với nhau theo đặc tả business của bạn.
+3.Spring IoC container quản lý vòng đời của Spring Bean và các cấu hình của project chẳng hạn như JNDI lookup.
+4.Spring MVC framework được sử dụng cho phát triển ứng dụng web rất dễ dàng với việc hỗ trợ rất tốt các tính năng web services, json,…
+5.Hỗ trợ quản lý transaction, JDBC operations, File uploading, Exception Handling,… rất dễ dàng bằng cách cấu hình được rút gọn, 
+thay vào đó là sử dụng annotation hoặc spring bean configuration file.
+6.Làm giảm đi sự phụ thuộc giữa các components khác nhau của ứng dụng, 
+Spring IoC container làm nhiệm vụ khởi tạo resources hoặc beans và “tiêm – inject” chúng theo sự phụ thuộc khác nhau.
+7.Thực hiện unit test case rất dễ bởi vì business logic của bạn không có sự phụ thuộc trực tiếp.
+ Việc thực hiện chỉ là viết test configuration và inject mock bean cho các mục đích test khác nhau.
+8.Làm giảm đi khối lượng code rất nhiều, chẳng hạn như việc khởi tạo đối tượng, open/close các resources,…
+9.Spring framework chia thành nhiều module riêng biệt, do đó việc sử dụng các features trong Spring framework rất tự do…
+ Ví dụ như ứng dụng không sử dụng tính năng transaction, thì không cần thiết phải thêm dependency này vào.
+10.Spring framework hỗ trợ hầu hết các tính năng của Java EE, thậm chí còn nhiều hơn nữa.
